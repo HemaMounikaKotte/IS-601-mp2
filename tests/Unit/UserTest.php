@@ -20,4 +20,13 @@ class UserTest extends TestCase
         $user = factory(\App\User::class)->create();
         $this->assertDatabaseHas('users', ["name" => "Mr. Jacinto Padberg"]);
     }
+
+
+    public function testExample2()
+    {
+        $user = factory(\App\User::class)->create([
+            'name' => 'Steve Smith',
+        ]);
+        $this->assertDatabaseHas('users', ["name" => "Steve Smith"]);
+    }
 }
