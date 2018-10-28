@@ -29,4 +29,12 @@ class UserTest extends TestCase
         ]);
         $this->assertDatabaseHas('users', ["name" => "Steve Smith"]);
     }
+
+    public function testExample3()
+    {
+        $user = User::find(44);
+        $user-> delete();
+        $users = User::all();
+        $this->assertDatabaseMissing('users', ['id' => '44']);
+    }
 }
