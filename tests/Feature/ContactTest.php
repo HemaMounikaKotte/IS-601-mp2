@@ -10,9 +10,7 @@ use App\User;
 class ContactTest extends TestCase
 {
     /**
-     * A basic test example.
-     *
-     * @return void
+     This test tests whether the contact page returns HTTP'200' status or not
      */
     public function testContactPage()
     {
