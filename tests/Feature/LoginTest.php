@@ -9,9 +9,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class LoginTest extends TestCase
 {
     /**
-     * A basic test example.
-     *
-     * @return void
+    This test tests whether the Login page created returns HTTP'200' status or not
      */
     public function testLoginPage()
     {
