@@ -14,8 +14,8 @@ class IntegercarTest extends TestCase
      */
     public function testCaryeartype()
     {
-        $car = Car::all();
         $car = Car::find(22);
+        print($car->year);
         $this->assertInternalType('numeric',$car->year);
     }
 }
