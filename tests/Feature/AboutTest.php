@@ -11,9 +11,7 @@ use App\User;
 class AboutTest extends TestCase
 {
     /**
-     * A basic test example.
-     *
-     * @return void
+     This test tests whether the about page created returns HTTP'200' status or not
      */
     public function testAboutPage()
     {
