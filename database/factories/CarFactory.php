@@ -8,6 +8,6 @@ $factory->define(App\Car::class, function (Faker $faker) {
     return [
         'make' => $CarsArray[$random],
         'model' => $faker->company,
-        'year' => $faker->year,
+        'year' => intval($faker->year),
     ];
 });
