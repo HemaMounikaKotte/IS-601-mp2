@@ -11,9 +11,8 @@ use App\User;
 class InsertcarTest extends TestCase
 {
     /**
-     * A basic test example.
-     *
-     * @return void
+     This test creates a new car with id,make and model features
+     * and tests whether it is in the database
      */
     public function testcarinsert()
     {
